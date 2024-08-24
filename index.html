@@ -7,15 +7,17 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
 </head>
-<body> <div class="w-full overflow-x-hidden">
+<body>
+
+<div class="w-full overflow-x-hidden">
     <!-- navbar -->
      <div class="bg-[#404EED]">
          <nav class="flex justify-between max-w-mw mx-auto items-center
-         h-16 text-white">
+         h-16 text-white px-6 xl:px-0">
 
             <img src="/images/logo.svg" alt="">
 
-            <ul class="flex gap-5 font-[600]">
+            <ul class="xl:flex hidden gap-5 font-[600]">
                 <li class="hover:underline"><a href="#">Download</a></li>
                 <li class="hover:underline"><a href="#">Nitro</a></li>
                 <li class="hover:underline"><a href="#">discover</a></li>
@@ -25,30 +27,36 @@
                 <li class="hover:underline"><a href="#">Careers</a></li>
             </ul>
 
-            <a href="#">
+            <a href="#" class="xl:block hidden">
                 <button class="self-center rounded-full  font-[500] 
                 p-2 bg-white text-[#2c2f33] text-[14px] px-3">
                     Open Discord
                 </button>
             </a>
+
+            <div class="xl:hidden block">
+                <i class="fa-solid fa-bars text-[23px]"></i>
+            </div>
+
+
          </nav>
      </div>
 
-     <!-- hero section  -->
-      <section class="w-full relative bg-[#404EED]">
+    <!-- hero section  -->
+      <section class="w-full relative bg-[#404EED]  px-6 xl:px-0">
 
-        <img src="images/Image0.svg" class="absolute bottom-0" alt="">
-        <img src="images/Image1.svg" class="absolute bottom-0 -right-10" alt="">
-        <img src="images/Image2.svg" class="absolute bottom-0 -left-28" alt="">
+        <img src="images/Image0.svg" class="hidden xl:block absolute bottom-0" alt="">
+        <img src="images/Image1.svg" class="hidden md:block md:max-w-[600px] lg:max-w-[700px] xl:max-w-[615px] absolute bottom-0 -right-10" alt="">
+        <img src="images/Image2.svg" class="block md:hidden xl:block absolute bottom-0 -left-28" alt="">
 
         <!-- main content -->
-        <div class="text-white gap-6 py-40 pt-32 flex flex-col items-center mx-auto 
+        <div class="text-white gap-6 pb-80 md:pb-64 xl:pb-40 pt-32 flex flex-col items-start xl:items-center xl:mx-auto 
         max-w-[800px]">  
-            <h2 class="uppercase font-['GintoNord'] z-10 text-6xl mb-4 font-bold ">imagine a place...</h2>
-            <p class="z-10 text-center text-xl mb-2 leading-[31px] font-['gg sans']">
+            <h2 class="uppercase font-['GintoNord'] z-10 text-4xl md:text-6xl mb-4 font-bold ">imagine a place...</h2>
+            <p class="z-10 xl:text-center text-[16px] md:text-xl mb-2 leading-[31px] font-['gg sans']">
                 ...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.
             </p>
-            <div class="flex z-10 gap-10">
+            <div class="z-10 gap-10 hidden xl:flex">
                 <button class="bg-white font-semibold text-black
                  p-3 rounded-full px-4 hover:text-[#404EED] transition-colors duration-200">
                     <a href="#">
@@ -64,17 +72,25 @@
                 </button>
 
             </div>
+
+            <button class="bg-white block xl:hidden font-semibold text-black
+                 p-3 rounded-full text-sm md:text-[1rem] px-4 hover:text-[#404EED] transition-colors duration-200">
+                    <a href="#">
+                        <i class="fa-solid fa-download mr-2"></i>
+                        Download from Google Play
+                    </a>
+            </button>
         </div>
       </section>
 
     <!-- section 1 -->
     <section class="bg-white">
-        <div class="max-w-mw px-10 mx-auto py-32 flex gap-24">
+        <div class="max-w-mw px-10 mx-auto py-32 flex flex-col md:flex-row gap-1 xl:gap-24">
 
-            <img src="images/section1Image.svg" class="max-w-[600px]" alt="">
+            <img src="images/section1Image.svg" class="w-full md:max-w-[55%]" alt="">
 
             <div class="flex flex-col gap-6 self-center">
-                <h3 class="font-bold leading-[55px] font-['ggSans'] text-5xl">Create an invite-only place where you belong</h3>
+                <h3 class="font-bold leading-[55px] font-['ggSans'] text-3xl md:text-5xl">Create an invite-only place where you belong</h3>
                 <p class="font-['ggSans'] text-xl">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
             </div>
         </div>
@@ -82,12 +98,12 @@
 
     <!-- section 2 -->
     <section class="bg-[#f6f6f6]">
-        <div class="max-w-mw px-10 mx-auto py-32 flex flex-row-reverse gap-24">
+        <div class="max-w-mw px-10 mx-auto py-32 flex flex-col md:flex-row-reverse gap-1 xl:gap-24">
 
-            <img src="images/section2Image.svg" class="max-w-[600px]" alt="">
+            <img src="images/section2Image.svg" class="w-full md:max-w-[55%]" alt="">
 
             <div class="flex flex-col gap-6 self-center">
-                <h3 class="font-bold leading-[55px] font-['ggSans'] text-5xl">Where hanging out is easy</h3>
+                <h3 class="font-bold leading-[55px] font-['ggSans'] text-3xl md:text-5xl">Where hanging out is easy</h3>
                 <p class="font-['ggSans'] text-xl">Grab a seat in a voice channel when you're free. Friends in your server can see you're around and instantly pop in to talk without having to call.</p>
             </div>
         </div>
@@ -95,12 +111,12 @@
 
     <!-- section 3 -->
     <section class="bg-white">
-        <div class="max-w-mw px-10 py-32 mx-auto flex gap-24">
+        <div class="max-w-mw px-10 py-32 mx-auto flex flex-col md:flex-row gap-1 xl:gap-24">
 
-            <img src="images/section3Image.svg" class="max-w-[600px]" alt="">
+            <img src="images/section3Image.svg" class="w-full md:max-w-[55%]" alt="">
 
             <div class="flex flex-col gap-6 self-center">
-                <h3 class="font-bold leading-[55px] font-['ggSans'] text-5xl">From few to a fandom</h3>
+                <h3 class="font-bold leading-[55px] font-['ggSans'] text-3xl md:text-5xl">From few to a fandom</h3>
                 <p class="font-['ggSans'] text-xl">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
             </div>
         </div>
@@ -108,15 +124,15 @@
 
     <!-- section 4 -->
      <section class="bg-[#f6f6f6]">
-        <div class="max-w-mw py-28 mx-auto">
-            <h2 class="uppercase font-['GintoNord'] text-center z-10 text-5xl mb-4 font-bold ">Relaiable tech for staying close</h2>
-            <p class="font-['ggSans'] text-[22px] text-center font-[400] ">Low-latency voice and video feels like you're in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
+        <div class="max-w-mw py-28 mx-auto px-10 sm:px-0">
+            <h2 class="uppercase font-['GintoNord'] sm:text-center z-10 text-[21px] md:text-4xl mb-4 font-bold ">Relaiable tech for staying close</h2>
+            <p class="font-['ggSans'] text-[18px] md:text-[22px] text-center font-[400] ">Low-latency voice and video feels like you're in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</p>
             <img src="images/section4Image.svg" class="w-full" alt="">
-            <div class="relative flex-col gap-10 flex py-10 items-center">
-                <img src="images/section5Image.svg" class="absolute top-0 left-80 w-[600px]" alt="">
-                <p class="w-fit font-bold text-4xl">Ready to start your journey?</p>
-                <button class="bg-[#404EED] text-xl font-semibold
-                 p-5 px-7 rounded-full text-white
+            <div class="relative flex-col gap-10 flex py-10 items-center text-xl md:text-3xl lg:text-4xl">
+                <img src="images/section5Image.svg" class="absolute mx-auto hidden md:block w-[600px]" alt="">
+                <p class="w-fit font-bold ">Ready to start your journey?</p>
+                <button class="bg-[#404EED] font-semibold
+                 p-5 px-7 rounded-full  text-white
                   transition-colors duration-200">
                     <a href="#">
                         <i class="fa-solid fa-download mr-2"></i>
@@ -130,9 +146,9 @@
     <!-- footer -->
      <footer class="bg-[#23272a]">
         <!-- main contianer  -->
-        <div class="max-w-mw mx-auto py-24 flex flex-col gap-9 pb-12">
+        <div class="max-w-mw mx-auto px-10 xl:px-0 py-24 flex flex-col gap-9 pb-12">
             <!-- first part  -->
-            <div class="flex gap-5">
+            <div class="flex flex-col md:flex-row gap-5">
                 <!-- left part -->
                 <div class="flex flex-col w-4/12">
                     <p class="uppercase font-['GintoNord'] text-[#5865f2] text-start z-10 text-4xl mb-4 font-bold ">IMAGINE A
@@ -153,8 +169,8 @@
                       </ul>
                 </div>
                 <!-- right part -->
-                 <div class="grid grid-cols-4 w-8/12">
-                    <div class="flex flex-col gap-3 text-white font-['ggSans']">
+                 <div class="grid grid-cols-2 gap-y-6 lg:grid-cols-4 w-8/12">
+                    <div class="flex flex-col md:justify-self-center lg:justify-self-start gap-3 text-white font-['ggSans']">
                         <h5 class="text-[#5865f2]">Product</h5>
                         <ul class="flex flex-col gap-2">
                             <li class="hover:underline"><a href="#">Download</a></li>
@@ -163,7 +179,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col gap-3 text-white font-['ggSans']">
+                    <div class="flex flex-col md:justify-self-start lg:justify-self-start gap-3 text-white font-['ggSans']">
                         <h5 class="text-[#5865f2]">Company</h5>
                         <ul class="flex flex-col gap-2">
                             <li class="hover:underline"><a href="#">About</a></li>
@@ -173,7 +189,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col gap-3 text-white font-['ggSans']">
+                    <div class="flex flex-col md:justify-self-center lg:justify-self-start gap-3 text-white font-['ggSans']">
                         <h5 class="text-[#5865f2]">Resources</h5>
                         <ul class="flex flex-col gap-2">
                             <li class="hover:underline"><a href="#">Colleges</a></li>
@@ -187,7 +203,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col gap-3 text-white font-['ggSans']">
+                    <div class="flex flex-col md:justify-self-start lg:justify-self-start gap-3 text-white font-['ggSans']">
                         <h5 class="text-[#5865f2]">Policies</h5>
                         <ul class="flex flex-col gap-2">
                             <li class="hover:underline"><a href="#">Terms</a></li>
@@ -218,6 +234,7 @@
      </footer>
 
 </div>
+
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
 </body>
 </html>
